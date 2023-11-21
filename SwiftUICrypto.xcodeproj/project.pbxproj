@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D850C3462B0B9F28009ECC02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D850C3452B0B9F28009ECC02 /* HomeViewModel.swift */; };
+		D8575A162B0CDBFC006BD7F3 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8575A152B0CDBFC006BD7F3 /* Coin.swift */; };
 		D87694932B0A367C003E99E7 /* SwiftUICryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87694922B0A367C003E99E7 /* SwiftUICryptoApp.swift */; };
 		D87694952B0A367C003E99E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87694942B0A367C003E99E7 /* ContentView.swift */; };
 		D87694972B0A367E003E99E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87694962B0A367E003E99E7 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		D850C3452B0B9F28009ECC02 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D8575A152B0CDBFC006BD7F3 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		D876948F2B0A367C003E99E7 /* SwiftUICrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87694922B0A367C003E99E7 /* SwiftUICryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICryptoApp.swift; sourceTree = "<group>"; };
 		D87694942B0A367C003E99E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		D87694A22B0A36A6003E99E7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D8575A152B0CDBFC006BD7F3 /* Coin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8575A162B0CDBFC006BD7F3 /* Coin.swift in Sources */,
 				D87694AB2B0A3862003E99E7 /* TopMoversView.swift in Sources */,
 				D87694AF2B0A3F36003E99E7 /* AllCoinsView.swift in Sources */,
 				D87694A92B0A3707003E99E7 /* HomeView.swift in Sources */,
