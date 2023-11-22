@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D84028C02B0E33B300A39D59 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D84028BF2B0E33B300A39D59 /* Kingfisher */; };
+		D84028C22B0E3FDF00A39D59 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84028C12B0E3FDF00A39D59 /* Double.swift */; };
 		D850C3462B0B9F28009ECC02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D850C3452B0B9F28009ECC02 /* HomeViewModel.swift */; };
 		D8575A162B0CDBFC006BD7F3 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8575A152B0CDBFC006BD7F3 /* Coin.swift */; };
 		D87694932B0A367C003E99E7 /* SwiftUICryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87694922B0A367C003E99E7 /* SwiftUICryptoApp.swift */; };
@@ -21,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D84028C12B0E3FDF00A39D59 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		D850C3452B0B9F28009ECC02 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D8575A152B0CDBFC006BD7F3 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		D876948F2B0A367C003E99E7 /* SwiftUICrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84028C02B0E33B300A39D59 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +116,7 @@
 		D87694A32B0A36A7003E99E7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D84028C12B0E3FDF00A39D59 /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +173,9 @@
 			dependencies = (
 			);
 			name = SwiftUICrypto;
+			packageProductDependencies = (
+				D84028BF2B0E33B300A39D59 /* Kingfisher */,
+			);
 			productName = SwiftUICrypto;
 			productReference = D876948F2B0A367C003E99E7 /* SwiftUICrypto.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +204,9 @@
 				Base,
 			);
 			mainGroup = D87694862B0A367C003E99E7;
+			packageReferences = (
+				D84028BE2B0E33B300A39D59 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D87694902B0A367C003E99E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -230,6 +241,7 @@
 				D87694952B0A367C003E99E7 /* ContentView.swift in Sources */,
 				D87694932B0A367C003E99E7 /* SwiftUICryptoApp.swift in Sources */,
 				D87694B12B0A3F5B003E99E7 /* CoinRowView.swift in Sources */,
+				D84028C22B0E3FDF00A39D59 /* Double.swift in Sources */,
 				D87694AD2B0A3873003E99E7 /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +441,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D84028BE2B0E33B300A39D59 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D84028BF2B0E33B300A39D59 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D84028BE2B0E33B300A39D59 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D87694872B0A367C003E99E7 /* Project object */;
 }
