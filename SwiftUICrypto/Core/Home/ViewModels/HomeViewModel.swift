@@ -12,7 +12,21 @@ class HomeViewModel: ObservableObject {
     @Published var topMovingCoins = [Coin]()
     
     init() {
-        fetchCoinData()
+//        fetchCoinData()
+        loadJson(fileName: "response_1700488483716")
+    }
+    
+    func loadJson(fileName: String) {
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let coins = try JSONDecoder().decode([Coin].self, from: data)
+                self.coins = coins
+                self.configureTopMovingCoins()
+            } catch {
+                print("Failed to read the json file: \(error)")
+            }
+        }
     }
     
     func fetchCoinData() {
@@ -31,12 +45,12 @@ class HomeViewModel: ObservableObject {
             }
             
             guard let data = data else { return }
-//            let dataAsString = String(data: data, encoding: .utf8)
-//            print("DEBUG: Data \(dataAsString ?? "")")
+            let dataAsString = String(data: data, encoding: .utf8)
+            print("DEBUG: Data \(dataAsString ?? "")")
             
             do {
                 let coins = try JSONDecoder().decode([Coin].self, from: data)
-//                print("DEBUG: Coins \(coins)")
+                print("DEBUG: Coins \(coins)")
                 DispatchQueue.main.async {
                     self.coins = coins
                     self.configureTopMovingCoins()
