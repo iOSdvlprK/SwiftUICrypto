@@ -30,7 +30,11 @@ struct AllCoinsView: View {
             ScrollView {
                 VStack {
                     ForEach(viewModel.coins) { coin in
-                        CoinRowView(coin: coin)
+                        NavigationLink(destination: {
+                            CoinDetailsView()
+                        }, label: {
+                            CoinRowView(coin: coin)
+                        })
                     }
                 }
             }
