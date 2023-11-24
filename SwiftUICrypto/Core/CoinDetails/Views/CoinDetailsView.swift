@@ -13,6 +13,7 @@ struct CoinDetailsView: View {
             ScrollView {
                 // chart
                 
+                /*
                 // overview
                 CoinDetailsSection()
                     .padding(.vertical)
@@ -20,6 +21,7 @@ struct CoinDetailsView: View {
                 // addtional details
                 CoinDetailsSection()
                     .padding(.vertical)
+                */
             }
             .padding()
             .navigationTitle("Bitcoin")
