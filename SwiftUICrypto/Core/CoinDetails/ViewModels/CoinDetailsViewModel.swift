@@ -10,6 +10,15 @@ import Foundation
 class CoinDetailsViewModel {
     private let coin: Coin
     
+    // chart config
+    var chartData = [ChartData]()
+    var startDate = Date()
+    var endDate = Date()
+    var minPrice = 0.0
+    var maxPrice = 0.0
+    var xAxisValues = [Date]()
+    var yAxisValues = [Double]()
+    
     var overviewSectionModel: CoinDetailSectionModel {
         // price stats
         let price = coin.currentPrice.toCurrency()
@@ -70,5 +79,24 @@ class CoinDetailsViewModel {
     
     init(coin: Coin) {
         self.coin = coin
+        configureChartData()
+    }
+    
+    func configureChartData() {
+        guard let priceData = coin.sparklineIn7D?.price else { return }
+        var index = 0
+        self.minPrice = priceData.min()!
+        self.maxPrice = priceData.max()!
+        self.endDate = Date(coinGeckoString: coin.lastUpdated ?? "")
+        self.startDate = endDate.addingTimeInterval(-7 * 60 * 60 * 24)
+        self.yAxisValues = [minPrice, (minPrice + maxPrice) / 2, maxPrice]
+        self.xAxisValues = [startDate, endDate]
+        
+        for price in priceData.reversed() {
+            let date = endDate.addingTimeInterval(-1 * 60 * 60 * Double(index))
+            let chartDataItem = ChartData(date: date, value: price)
+            self.chartData.append(chartDataItem)
+            index += 1
+        }
     }
 }

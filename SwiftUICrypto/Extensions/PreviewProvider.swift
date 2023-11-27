@@ -233,6 +233,8 @@ class DeveloperPreview {
         ]),
         priceChangePercentage24HInCurrency: 1.7834425269915035)
     */
+    
+    // more efficient way of adding the mock coin data
     let coin: Coin = {
         let json: String = """
     {
