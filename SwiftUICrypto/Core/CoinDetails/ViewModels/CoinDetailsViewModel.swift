@@ -91,6 +91,8 @@ class CoinDetailsViewModel {
     init(coin: Coin) {
         self.coin = coin
         configureChartData()
+        
+        print("DEBUG: Coin is \(self.coinName)")
     }
     
     func configureChartData() {

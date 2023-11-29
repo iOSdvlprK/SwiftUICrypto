@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80E67AF2B1771B20043ABFF /* CustomLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E67AE2B1771B20043ABFF /* CustomLoadingIndicator.swift */; };
+		D80E67B12B17793B0043ABFF /* LazyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E67B02B17793B0043ABFF /* LazyNavigationView.swift */; };
 		D813EB872B10DFF7004B4576 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D813EB862B10DFF7004B4576 /* StatisticModel.swift */; };
 		D813EB892B10E107004B4576 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D813EB882B10E107004B4576 /* PreviewProvider.swift */; };
 		D813EB8B2B10ED41004B4576 /* CoinDetailSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D813EB8A2B10ED41004B4576 /* CoinDetailSectionModel.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D80E67AE2B1771B20043ABFF /* CustomLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingIndicator.swift; sourceTree = "<group>"; };
+		D80E67B02B17793B0043ABFF /* LazyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyNavigationView.swift; sourceTree = "<group>"; };
 		D813EB862B10DFF7004B4576 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		D813EB882B10E107004B4576 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		D813EB8A2B10ED41004B4576 /* CoinDetailSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailSectionModel.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 		D87694A42B0A36A8003E99E7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D80E67AE2B1771B20043ABFF /* CustomLoadingIndicator.swift */,
+				D80E67B02B17793B0043ABFF /* LazyNavigationView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 			files = (
 				D8575A162B0CDBFC006BD7F3 /* Coin.swift in Sources */,
 				D87694AB2B0A3862003E99E7 /* TopMoversView.swift in Sources */,
+				D80E67B12B17793B0043ABFF /* LazyNavigationView.swift in Sources */,
 				D813EB8B2B10ED41004B4576 /* CoinDetailSectionModel.swift in Sources */,
 				D87694AF2B0A3F36003E99E7 /* AllCoinsView.swift in Sources */,
 				D87694A92B0A3707003E99E7 /* HomeView.swift in Sources */,
@@ -309,6 +316,7 @@
 				D832C6072B12137000DA04F8 /* CoinDetailsViewModel.swift in Sources */,
 				D813EB892B10E107004B4576 /* PreviewProvider.swift in Sources */,
 				D87694B12B0A3F5B003E99E7 /* CoinRowView.swift in Sources */,
+				D80E67AF2B1771B20043ABFF /* CustomLoadingIndicator.swift in Sources */,
 				D813EB872B10DFF7004B4576 /* StatisticModel.swift in Sources */,
 				D854ECD22B0F813400D21E8F /* CoinDetailsView.swift in Sources */,
 				D88AE9432B14C5A300A284DB /* ChartView.swift in Sources */,
